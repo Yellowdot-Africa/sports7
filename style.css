@@ -1,0 +1,353 @@
+@font-face {
+  font-family: Author;
+  src: url('fonts/Author-Variable.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Author;
+  src: url('fonts/Author-VariableItalic.ttf') format('truetype');
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.15;
+  position: relative;
+  font-family: Author;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+p,
+li,
+ul,
+pre,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+blockquote,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.page-container {
+  background: linear-gradient(#09000C, #0B000E);
+  width: 100%;
+  margin: 0 auto;
+  max-width: 450px;
+  min-width: 300px;
+  padding: 1% 0;
+  position: relative;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
+  gap: 20px;
+}
+
+.category-link {
+  color: #fff;
+  padding: 8px 35px;
+  border-radius: 50px !important;
+  background-color: transparent;
+}
+.category > div {
+  border-radius: 50px;
+  overflow: hidden;
+}
+.category-link:hover,
+.category-link.active {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: 
+    linear-gradient(to right, #09000C, #09000C),
+    linear-gradient(to right, #999999 , #9D45CA, #ffffff);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #00000066, #32323266);
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  display: flex;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  display: inline-block;
+  position: relative;
+  margin-right: 6px;
+  background: rgba(0, 0, 0, 1);
+  transition: 0.2s ease-in-out 0s;
+  height: 223px;
+  width: 340px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  padding-left: 10px;
+  background-color: #00000099;
+  -webkit-backdrop-filter: blur(2px);
+  -moz-backdrop-filter: blur(2px);
+  -o-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.game-slide {
+  display: flex;
+  justify-content: space-between;
+}
+.game-slide-desc {
+  color: #ACACAC;
+}
+.game-slide-play {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(#D9D9D952, #38383852);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: url("assets/Polygon.svg") center center no-repeat;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.dots-container {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  display: inline-block;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #10f4f7;
+}
+
+/* Featured Videos */
+.videos, .games {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.feature-video,
+.more-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+.feature-video > .video-item {
+  background-image: linear-gradient(#06060666, #2D2D2D29);
+}
+.more-video > .video-item {
+  background-image: linear-gradient(#06060666, #6C6C6C29);
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.video-item img {
+  width: 119px;
+  height: 112px;
+  object-fit: cover;
+}
+
+.video-desc {
+  color: #9D9D9D;
+  margin-top: 10px;
+
+}
+
+/* Featured Games */
+.games {
+  margin: 30px 0;
+}
+
+.featured-games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 10px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.featured-games > div {
+  text-align: center;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+}
+.featured-games > div > p {
+  margin-top: 10px;
+}
+.game-play{
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  background-color: #00000099;
+  -webkit-backdrop-filter: blur(2px);
+  -moz-backdrop-filter: blur(2px);
+  -o-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+.game-play > img, .game-slide-play >img {
+  width: 13px;
+  height: 18px;
+  filter: saturate(100%) brightness(0) invert(0.75) sepia(1) hue-rotate(180deg) saturate(10) brightness(1.2);
+
+}
+footer {
+  padding: 20px;
+  font-size: 14px;
+  background-color: #0F0F0F80;
+  border-top: 1px solid #505050;
+  margin-top: 50px;
+}
+
+footer > p {
+  margin-bottom: 10px;
+}
+footer >p:first-child{
+  font-style: italic;
+  font-weight: 600;
+}
