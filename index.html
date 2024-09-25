@@ -1,102 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium Sports Video And Gaming Content To Enjoy!" />
+    <meta
+      name="description"
+      content="Premium Sports Video And Gaming Content To Enjoy!"
+    />
     <title>Sports 7</title>
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
+    <script src="video.js"></script>
+    <!-- <script defer="defer" src="script.js"></script> -->
+  </head>
+  <body>
     <div class="page-container" id="main">
-        <header>
-            <img class="logo" src="assets/SPORTS7.svg" alt="Sports 7 Logo" />
-            <p class="tagline">Premium Sports Video And Gaming Content To Enjoy!</p>
-        </header>
+      <header>
+        <img class="logo" src="assets/SPORTS7.svg" alt="Sports 7 Logo" />
+        <p class="tagline">Premium Sports Video And Gaming Content To Enjoy!</p>
+      </header>
 
-        <div class="category">
-            <button class="category-link active">Videos</button>
-            <button class="category-link" onclick="location.href='games.html'">Games</button>
+      <div class="category">
+        <button class="category-link active">Videos</button>
+        <button class="category-link" onclick="location.href='games.html'">
+          Games
+        </button>
+      </div>
+
+      <div class="carousel">
+        <div class="slides">
+
         </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots-container"></div>
+      </div>
 
-        <div class="carousel">
-            <div class="slides">
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Badland</h4>
-                </div>
-              </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/woman.png" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Plant vs Zombies 3</h4>
-                </div>
-              </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img2.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Archery</h4>
-                </div>
-              </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img2.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Archery</h4>
-                </div>
-              </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img2.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Archery</h4>
-                </div>
-              </a>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-            <div class="dots-container"></div>
-          </div>
+      <div class="videos">
+        <h3>Featured Videos</h3>
+        <div class="feature-video">
 
-        <div class="videos">
-            <h3>Featured Videos</h3>
-            <div class="feature-video">
-                <a href="#" class="video-item">
-                    <img src="assets/woman.png" alt="Featured Video 1" />
-                    <div class="video-title">
-                        <p>Video title</p>
-                        <p class="video-desc">Video desc</p>
-                    </div>
-                </a>
-                <a href="#" class="video-item">
-                    <img src="assets/sport7img2.jpeg" alt="Featured Video 2" />
-                    <div class="video-title">
-                        <p>Video title</p>
-                        <p class="video-desc">Video desc</p>
-                    </div>
-                </a>
-            </div>
-            <h3>More Videos</h3>
-            <div class="more-video">
-                <a href="#" class="video-item">
-                    <img src="assets/sport7img.jpeg" alt="More Video 1" />
-                    <div class="video-title">
-                        <p>Video title</p>
-                        <p class="video-desc">Video desc</p>
-                    </div>
-                </a>
-            </div>
         </div>
+      </div>
 
-        <footer>
-            <p>Sports7</p>
-            <p>Links and copyright info</p>
-        </footer>
+      <footer>
+        <p>Sports7</p>
+        <p>Links and copyright info</p>
+      </footer>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
