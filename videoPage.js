@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let hash = window.location.hash;
   hash = hash ? hash.substring(1) : "";
 
-  console.log("Hash:", hash);
-
   const shuffleArray = (array) => {
       if (!Array.isArray(array)) {
           console.error("Invalid array provided.");
@@ -22,16 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const savedData = localStorage.getItem("VideoList");
       if (savedData) {
           const videoList = JSON.parse(savedData);
-          // console.log("Video List:", videoList);
-          return videoList.data;
+          return videoList;
       }
       return [];
   };
 
   const ShuffleAndSplitContent = (data) => {
       const shuffledVideos = shuffleArray(data);
-      console.log(shuffledVideos);
-      
       return shuffledVideos.slice(0, 5);  // Get first 5 videos
   };
 
@@ -91,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // putting it all together
-  const videoList = retrieveFromStorage();
+  const videoList = retrieveFromStorage(); 
   if (videoList) {
       const shuffledVideos = ShuffleAndSplitContent(videoList);
       console.log(shuffledVideos);
