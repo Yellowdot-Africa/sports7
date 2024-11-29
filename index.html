@@ -9,6 +9,10 @@
 </head>
 <body>
     <div class="page-container" id="main">
+      <div id="loading-indicator" class="loading-center">
+        <div class="loading-indicator">
+        </div>
+      </div>
         <header>
             <img class="logo" src="assets/SPORTS7.svg" alt="Sports 7 Logo" />
             <p class="tagline">Premium Sports Video And Gaming Content To Enjoy!</p>
@@ -20,7 +24,7 @@
         </div>
 
         <div class="carousel">
-            <div class="slides">
+            <div class="slides" id="slides">
               <a href="#" class="slide">
                 <img class="img" src="assets/sport7img.jpeg" alt="" />
                 <div class="play-btn"></div>
@@ -42,30 +46,16 @@
                   <h4>Archery</h4>
                 </div>
               </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img2.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Archery</h4>
-                </div>
-              </a>
-              <a href="#" class="slide">
-                <img class="img" src="assets/sport7img2.jpeg" alt="" />
-                <div class="play-btn"></div>
-                <div class="slide-title">
-                  <h4>Archery</h4>
-                </div>
-              </a>
             </div>
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
             <div class="dots-container"></div>
-          </div>
+      </div>
 
         <div class="videos">
             <h3>Featured Videos</h3>
-            <div class="feature-video">
-                <a href="#" class="video-item">
+            <div class="feature-video" id="featuredVideos">
+                <!-- <a href="#" class="video-item">
                     <img src="assets/woman.png" alt="Featured Video 1" />
                     <div class="video-title">
                         <p>Video title</p>
@@ -78,10 +68,10 @@
                         <p>Video title</p>
                         <p class="video-desc">Video desc</p>
                     </div>
-                </a>
+                </a> -->
             </div>
-            <h3>More Videos</h3>
-            <div class="more-video">
+            <!-- <h3>More Videos</h3>
+            <div class="more-video" id="moreVideos">
                 <a href="#" class="video-item">
                     <img src="assets/sport7img.jpeg" alt="More Video 1" />
                     <div class="video-title">
@@ -89,14 +79,15 @@
                         <p class="video-desc">Video desc</p>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
 
         <footer>
             <p>Sports7</p>
-            <p>Links and copyright info</p>
+            <!-- <p>Links and copyright info</p> -->
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
 </body>
 </html>

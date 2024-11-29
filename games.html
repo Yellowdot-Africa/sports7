@@ -9,10 +9,13 @@
     />
     <title>Sports7 | Games</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="page-container" id="main">
+      <div id="loading-indicator" class="loading-center">
+        <div class="loading-indicator">
+        </div>
+      </div>
       <header>
         <img class="logo" src="assets/SPORTS7.svg" alt="Sports 7 Logo" />
         <p class="tagline">Premium Sports Video And Gaming Content To Enjoy!</p>
@@ -26,36 +29,7 @@
         </button>
       </div>
       <div class="carousel">
-        <div class="slides">
-          <a href="#" class="slide">
-            <img class="img" src="assets/xsmall (9) 1.png" alt="" />
-
-            <div class="slide-title game-slide">
-              <div>
-                <p>Badland</p>
-                <p class="game-slide-desc">Game Description</p>
-              </div>
-              <div class="game-slide-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-
-
-            </div>
-          </a>
-          <a href="#" class="slide">
-            <img class="img" src="assets/xsmall.png" alt="" />
-            <div class="slide-title game-slide">
-              <div>
-                <p>Badland</p>
-                <p class="game-slide-desc">Game Description</p>
-              </div>
-              <div class="game-slide-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </div>
-          </a>
+        <div class="slides" id="slides">
           <a href="#" class="slide">
             <img class="img" src="assets/xsmall (6) 1.png" alt="" />
             <div class="slide-title game-slide">
@@ -102,83 +76,16 @@
       </div>
       <div class="games">
         <h3>Featured Games</h3>
-        <div class="featured-games">
-          <div>
-            <a href="#" class="item ">
-              <img src="assets/xsmall (1) 1.png" alt="Mouse Maze" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item ">
-              <img src="assets/xsmall (3) 1.png" alt="Cut the Rope" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item ">
-              <img src="assets/xsmall (6) 1.png" alt="game" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item">
-              <img src="assets/xsmall (7) 1.png" alt="Mouse Maze" />
-              <div class="game-play">
-                  <span>PLAY</span>
-                  <img src="assets//Polygon.svg" alt="polygon">
-              </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item ">
-              <img src="assets/xsmall (7) 1.png" alt="Cut the Rope" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item ">
-              <img src="assets/xsmall.png" alt="Soccer Hero" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Game title</p>
-          </div>
-          <div>
-            <a href="#" class="item">
-              <img src="assets/xsmall (7) 1.png" alt="Mouse Maze" />
-              <div class="game-play">
-                <span>PLAY</span>
-                <img src="assets//Polygon.svg" alt="polygon">
-            </div>
-            </a>
-            <p>Mouse <span>Maze</span></p>
-          </div>
+        <div class="featured-games" id="featuredGames">
+       
         </div>
       </div>
       <footer>
         <p>Sports7</p>
-        <p>links and copywrite info</p>
+        <!-- <p>links and copywrite info</p> -->
       </footer>
     </div>
+    <script src="script.js" defer></script>
+    <script src="games.js" defer></script>
   </body>
 </html>
