@@ -89,8 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const videoList = retrieveFromStorage(); 
   if (videoList) {
       const shuffledVideos = ShuffleAndSplitContent(videoList);
-      console.log(shuffledVideos);
-      
 
       if (hash) {
           renderVideo(hash, ".video-container");
